@@ -1,0 +1,16 @@
+user: www-data
+group: www-data
+pid: tmp/pids/thin.pid
+timeout: 10
+socket: tmp/thin.sock
+wait: 10
+log: log/thin.log
+max_conns: 64
+require: []
+environment: production
+max_persistent_conns: 32
+threaded: false
+servers: 1
+daemonize: true
+chdir: /var/status
+tag: status

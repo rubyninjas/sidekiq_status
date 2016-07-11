@@ -1,0 +1,32 @@
+{
+  "modules" : {
+    "sidekiq" : {
+      "url" : "redis://0.0.0.0:6379",
+      "namespace" : "mst.production",
+      "worker_queues" : [
+        "aws_photo_upload_jobs",
+        "address_program_export_jobs",
+        "address_program_jobs",
+        "lenta_download",
+        "rollbar",
+        "sales_jobs",
+        "scorecard_export_jobs",
+        "scorecard_generator_jobs",
+        "feedback_mail",
+        "mailers",
+        "location_upload_jobs",
+        "sku_upload_jobs",
+        "default",
+        "active_jobs_aws_photo_upload_jobs",
+        "active_jobs_address_program_export_jobs",
+        "active_jobs_address_program_jobs",
+        "active_jobs_lenta_download",
+        "active_jobs_feedback_mail",
+        "active_jobs_location_upload_jobs",
+        "active_jobs_sku_upload_jobs",
+        "paperclip"
+      ],
+      "timeout" : 5
+    }
+  }
+}     

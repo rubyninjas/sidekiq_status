@@ -1,0 +1,12 @@
+.DS_Store
+*.sw[a-z]
+
+.bundle
+
+#IntelliJ IDEA
+.idea
+*.iml
+
+# Local configuration file (sdk path, etc)
+local.properties
+tools/status_server/config.json

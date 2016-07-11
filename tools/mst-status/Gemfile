@@ -1,0 +1,4 @@
+source "http://rubygems.org"
+gemspec :name => 'mst-status'
+gemspec :name => 'mst-status-sidekiq'
+
